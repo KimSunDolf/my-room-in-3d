@@ -100,14 +100,14 @@ export default class CoffeeSteam
                 .addInput(
                     this.model.material.uniforms.uNeutralMix,
                     'value',
-                    { label: 'uNeutralMix', min: 0, max: 1 }
+                    { label: '混合度', min: 0, max: 1 }
                 )
 
             this.debugFolder
                 .addInput(
                     this.colors,
                     'tv',
-                    { view: 'color' }
+                    { label: '电视背光', view: 'color' }
                 )
                 .on('change', () =>
                 {
@@ -118,14 +118,14 @@ export default class CoffeeSteam
                 .addInput(
                     this.model.material.uniforms.uLightTvStrength,
                     'value',
-                    { label: 'uLightTvStrength', min: 0, max: 3 }
+                    { label: '电视背景光照强度', min: 0, max: 3 }
                 )
 
             this.debugFolder
                 .addInput(
                     this.colors,
                     'desk',
-                    { view: 'color' }
+                    { label: '桌灯颜色', view: 'color' }
                 )
                 .on('change', () =>
                 {
@@ -136,14 +136,14 @@ export default class CoffeeSteam
                 .addInput(
                     this.model.material.uniforms.uLightDeskStrength,
                     'value',
-                    { label: 'uLightDeskStrength', min: 0, max: 3 }
+                    { label: '桌灯强度', min: 0, max: 3 }
                 )
 
             this.debugFolder
                 .addInput(
                     this.colors,
                     'pc',
-                    { view: 'color' }
+                    { label: '电脑屏幕背光', view: 'color' }
                 )
                 .on('change', () =>
                 {
@@ -154,7 +154,7 @@ export default class CoffeeSteam
                 .addInput(
                     this.model.material.uniforms.uLightPcStrength,
                     'value',
-                    { label: 'uLightPcStrength', min: 0, max: 3 }
+                    { label: '电脑背光强度', min: 0, max: 3 }
                 )
         }
     }

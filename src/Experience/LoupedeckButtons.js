@@ -17,7 +17,7 @@ export default class LoupedeckButtons
         if(this.debug)
         {
             this.debugFolder = this.debug.addFolder({
-                title: 'loupedeckButtons',
+                title: 'Loupedeck 按钮',
                 expanded: false
             })
         }
