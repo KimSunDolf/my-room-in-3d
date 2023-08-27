@@ -17,7 +17,7 @@ export default class BouncingLogo
         if(this.debug)
         {
             this.debugFolder = this.debug.addFolder({
-                title: 'bouncingLogo',
+                title: '电视弹跳 Logo',
                 expanded: false
             })
         }
@@ -60,7 +60,7 @@ export default class BouncingLogo
                 this.model.group.position,
                 'x',
                 {
-                    label: 'positionX', min: - 5, max: 5, step: 0.001
+                    label: '位置-X', min: - 5, max: 5, step: 0.001
                 }
             )
 
@@ -68,7 +68,7 @@ export default class BouncingLogo
                 this.model.group.position,
                 'y',
                 {
-                    label: 'positionY', min: - 5, max: 5, step: 0.001
+                    label: '位置-Y', min: - 5, max: 5, step: 0.001
                 }
             )
 
@@ -76,7 +76,7 @@ export default class BouncingLogo
                 this.model.group.position,
                 'z',
                 {
-                    label: 'positionZ', min: - 5, max: 5, step: 0.001
+                    label: '位置-Z', min: - 5, max: 5, step: 0.001
                 }
             )
 
@@ -84,7 +84,7 @@ export default class BouncingLogo
                 this.model.mesh.scale,
                 'z',
                 {
-                    label: 'scaleZ', min: 0.001, max: 1, step: 0.001
+                    label: '缩放-Z', min: 0.001, max: 1, step: 0.001
                 }
             )
 
@@ -92,7 +92,7 @@ export default class BouncingLogo
                 this.model.mesh.scale,
                 'y',
                 {
-                    label: 'scaleY', min: 0.001, max: 1, step: 0.001
+                    label: '缩放-Y', min: 0.001, max: 1, step: 0.001
                 }
             )
         }
@@ -119,7 +119,7 @@ export default class BouncingLogo
                 this.animations.limits.z,
                 'min',
                 {
-                    label: 'limitZMin', min: - 3, max: 0, step: 0.001
+                    label: '限制-ZMin', min: - 3, max: 0, step: 0.001
                 }
             )
 
@@ -127,7 +127,7 @@ export default class BouncingLogo
                 this.animations.limits.z,
                 'max',
                 {
-                    label: 'limitZMax', min: 0, max: 3, step: 0.001
+                    label: '限制-ZMax', min: 0, max: 3, step: 0.001
                 }
             )
 
@@ -135,7 +135,7 @@ export default class BouncingLogo
                 this.animations.limits.y,
                 'min',
                 {
-                    label: 'limitYMin', min: - 3, max: 0, step: 0.001
+                    label: '限制-YMin', min: - 3, max: 0, step: 0.001
                 }
             )
 

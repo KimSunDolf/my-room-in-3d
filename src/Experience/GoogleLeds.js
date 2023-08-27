@@ -16,7 +16,7 @@ export default class GoogleLeds
         if(this.debug)
         {
             this.debugFolder = this.debug.addFolder({
-                title: 'googleLeds',
+                title: '谷歌 Leds',
                 expanded: false
             })
         }
@@ -76,7 +76,7 @@ export default class GoogleLeds
                     .addInput(
                         item,
                         'color',
-                        { view: 'color' }
+                        { label:'颜色' ,view: 'color' }
                     )
                     .on('change', () =>
                     {
